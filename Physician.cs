@@ -6,11 +6,10 @@ namespace Inheritance_Doctor
 {
     class Physician:Doctor
     {
-        public Physician(string name, string hospital) //constructor
+        public Physician(string name, string hospital) : base(name, hospital)
         {
-            this.Name = name;
-            this.Hospital = hospital;
         }
+        
         public void ViralIssues()
         {
             Console.WriteLine("The physican looks after patients with viral issues. ");
