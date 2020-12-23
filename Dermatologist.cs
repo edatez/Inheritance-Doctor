@@ -6,10 +6,8 @@ namespace Inheritance_Doctor
 {
     class Dermatologist:Doctor
     {
-        public Dermatologist(string name, string hospital) //constructor
-        {
-            this.Name = name;
-            this.Hospital = hospital;
+        public Dermatologist(string name, string hospital) : base (name, hospital)
+        { 
         }
 
         public void SkinIssues()
@@ -24,3 +22,8 @@ namespace Inheritance_Doctor
         }
     }
 }
+         
+
+
+        
+
